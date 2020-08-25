@@ -1,2 +1,2 @@
 # Short_Problems 
-My solutions for hackerrank adapted to run in one file
+My solutions for HackerRank adapted to run in one file
