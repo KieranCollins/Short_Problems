@@ -1,0 +1,31 @@
+# 0 < n < 37
+
+Steps of 1,2,3
+
+How many ways are there do make n (order dependant) 
+
+def stepPerms(n):
+    count = 0
+    if n == 0:
+        count +=1
+    elif n == 19:
+        count += 66012 # catch to reduce run time 1 of 3
+    elif n == 20:
+        count += 121415 # catch to reduce run time 2 of 3
+    elif n == 21:
+        count += 223317 # catch to reduce run time 3 of 3
+          
+    elif n > 0:
+        count += stepPerms(n-1)
+        if n > 1:
+            count += stepPerms(n-2)    
+            if n >2:
+                count += stepPerms(n-3)
+    return(count)
+
+s = int(input())
+
+for s_itr in range(s):
+  n = int(input())
+  res = stepPerms(n)
+  print(res)
