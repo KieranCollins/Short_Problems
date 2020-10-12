@@ -8,7 +8,7 @@ e = [10, 10, 1, 1]
 
 # To reduce worst case time complexity count over for loop and recursion ending
 # when the number of steps == len(arr)
-#worst case time complexity of O(n)
+# The worst case time complexity is O(n)
         
 def check(arr):
     diff = (max(arr) - min(arr))/(len(arr)-1) 
