@@ -28,7 +28,7 @@ def seq(diff,arr,i):
                 print(arr) 
                 return(False)
         check = (arr[i]-min(arr))% diff    
-        if check != 0 or round(check) != check: # not insequence breaks
+        if check != 0 or round(check) != check: # not in sequence breaks
                 print(False)
                 print(arr)
                 return(False)
